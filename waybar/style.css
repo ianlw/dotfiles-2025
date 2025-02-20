@@ -274,14 +274,13 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #custom-appmenu {
-    background-color: @backgrounddark;
-    font-size: 16px;
-    color: @textcolor1;
-    border-radius: 15px;
+    background-image: url("/home/ian/Dev/codeforces-api/Codeforces.colored.svg");
+        background-size: 20px 20px; /* Cambia el tamaño del SVG */
+    font-size: 1px;
+    background-repeat: no-repeat;
     padding: 0px 10px 0px 10px;
-    margin: 8px 14px 8px 14px;
-    opacity:0.8;
-    border:3px solid @bordercolor;
+    margin: 8px 6px 8px 14px;
+    border:0px solid @bordercolor;
 }
 
 /* -----------------------------------------------------
@@ -362,8 +361,8 @@ window#waybar.empty #window {
     font-size: 16px;
     color: @textcolor2;
     border-radius: 15px;
-    padding: 1px 10px 0px 10px;
-    margin: 8px 15px 8px 0px;
+    padding: 1px 0px 0px 10px;
+    margin: 8px 5px 8px 0px;
     opacity:0.8;
     border:3px solid @background;   
 }

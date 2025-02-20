@@ -162,9 +162,9 @@
         // START APPS LABEL
         "format": "Apps",
         // END APPS LABEL
-        "on-click": "sleep 0.2;rofi -show drun -replace",
+        "on-click": "python /home/ian/Dev/codeforces-api/contest-codeforces-reminder.py",
         "on-click-right": "~/dotfiles/hypr/scripts/keybindings.sh",
-        "tooltip-format": "Left: Open the application launcher\nRight: Show all keybindings"
+        "tooltip-format": "Contest Codeforces"
     },
 
     // Rofi Application Launcher

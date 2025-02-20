@@ -28,7 +28,7 @@
     "modules-left": [
         "custom/empty",
         "clock",
-        //"custom/appmenu",
+        "custom/appmenu",
         //"group/links",
         //"group/settings",
         //"wlr/taskbar",
