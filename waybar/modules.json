@@ -317,20 +317,20 @@
         "format": "{ifname}",
         "format-wifi": " {signalStrength}%",
         "format-ethernet": " {ifname}",
-        "format-disconnected": "Disconnected",
+        "format-disconnected": "󰖪",
         "tooltip-format": " {ifname} via {gwaddri}",
         "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
         "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
         "tooltip-format-disconnected": "Disconnected",
         "max-length": 50,
-        "on-click": "kitty --class dotfiles-floating -e nmtui",
+        "on-click": "kitty --class dotfiles-floating -e nmcli dev wifi",
         "on-click-right": "~/dotfiles/.settings/networkmanager.sh"
     },
 
     // Battery
     "battery": {
         "states": {
-            // "good": 95,
+            "good": 95,
             "warning": 30,
             "critical": 15
         },
@@ -340,7 +340,8 @@
         "format-alt": "{icon} {time}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+                "interval": 10,
 
     },
 
@@ -350,7 +351,7 @@
         "format": "{icon}{volume}",
         "format-bluetooth": "{volume}% {icon}{format_source}",
         "format-bluetooth-muted": " {icon}{format_source}",
-        "format-muted": "{format_source}",
+        "format-muted": " {volume}",
         "format-source": " {volume}% ",
         "format-source-muted": "",
         "format-icons": {
@@ -367,7 +368,8 @@
 
     // Bluetooth
     "bluetooth": {
-        "format": " {status}",
+        "format": "",
+        //"format": " {status}",
         "format-disabled": "",
         "format-off": "",
         "interval": 30,

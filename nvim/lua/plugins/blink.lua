@@ -97,7 +97,7 @@ winhighlight = 'Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:Blin
 
   sources = {
     -- Remove 'buffer' if you don't want text completions, by default it's only enabled when LSP returns no items
-    default = {'lazydev', 'lsp', 'path', 'snippets', 'buffer' },
+    default = {'lazydev', 'lsp', 'path', 'snippets', 'buffer'},
      providers = {
           lazydev = {
             name = "LazyDev",

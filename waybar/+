@@ -384,14 +384,14 @@ window#waybar.empty #window {
 #pulseaudio:hover {
     background: rgb(203,166,247);
     background: linear-gradient(270deg,
-        rgba(0, 30, 50, 1) 0%,
-        rgba(76, 118, 151, 0.8) 25%,
-        rgba(198, 113, 144, 0.8) 50%,
-        rgba(227, 201, 214, 1) 100%
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 0, 128, 0.8) 25%,
+        rgba(128, 0, 255, 0.8) 50%,
+        rgba(0, 0, 255, 1) 100%
     );
-    background-size: 600% 600%;
+    background-size: 400% 400%;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.68);
-        animation: gradient_f 2.5s ease-in-out infinite;
+        animation: gradient_f 2s ease-in-out infinite;
 
 }
 
@@ -426,20 +426,6 @@ window#waybar.empty #window {
     margin: 8px 15px 8px 0px;
     opacity:0.8;
 }
-
-#network:hover {
-    background: rgb(203,166,247);
-    background: linear-gradient(270deg,
-        rgba(0, 30, 50, 1) 0%,
-        rgba(76, 118, 151, 0.8) 25%,
-        rgba(198, 113, 144, 0.8) 50%,
-        rgba(227, 201, 214, 1) 100%
-    );
-    background-size: 600% 600%;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.68);
-        animation: gradient_f 2.5s ease-in-out infinite;
-}
-
 
 #network.ethernet {
     background-color: @backgroundlight;
